@@ -1,0 +1,22 @@
+{
+	"name": "font-awesome-animation",
+	"version": "0.0.1",
+	"author": "l-lin",
+	"main": [
+        "dist/font-awesome-animation.css",
+        "dist/font-awesome-animation.min.css"
+    ],
+    "ignore": [
+        ".bowerrc",
+        ".editorconfig",
+        ".git*",
+        ".jshintrc",
+        "Gruntfile.js",
+        "test",
+        "node_modules",
+        "src",
+        ".travis.yml"
+    ],
+    "dependencies": {},
+    "devDependencies": {}
+}

@@ -1,0 +1,21 @@
+{
+	"name": "font-awesome-animation",
+	"version": "0.0.1",
+	"dependencies": {},
+	"author": "l-lin",
+	"devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-contrib-clean": "~0.5.0",
+        "grunt-contrib-cssmin": "~0.7.0",
+        "grunt-contrib-uglify": "~0.2.0",
+        "grunt-contrib-concat": "~0.3.0",
+        "load-grunt-tasks": "~0.2.0",
+        "time-grunt": "~0.2.0"
+    },
+    "engines": {
+        "node": ">=0.8.0"
+    },
+    "scripts": {
+        "test": "grunt test"
+    }
+}
