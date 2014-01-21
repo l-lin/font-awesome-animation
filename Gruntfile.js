@@ -86,6 +86,10 @@ module.exports = function(grunt) {
         'concat:banner'
     ]);
 
+    grunt.registerTask('test', [
+        'build'
+    ]);
+
     grunt.registerTask('default', [
         'build'
     ]);
