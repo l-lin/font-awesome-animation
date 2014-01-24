@@ -2,7 +2,7 @@
  * font-awesome-animation - v0.0.2
  * https://github.com/l-lin/font-awesome-animation
  */
-@-moz-keyframes wrenching {
+@-moz-keyframes wrench {
 	0%{-moz-transform:rotate(-12deg)}
 	8%{-moz-transform:rotate(12deg)}
 	10%{-moz-transform:rotate(24deg)}
@@ -19,7 +19,7 @@
 	68%{-moz-transform:rotate(24deg)}
 	75%{-moz-transform:rotate(0deg)}
 }
-@-webkit-keyframes wrenching {
+@-webkit-keyframes wrench {
 	0%{-webkit-transform:rotate(-12deg)}
 	8%{-webkit-transform:rotate(12deg)}
 	10%{-webkit-transform:rotate(24deg)}
@@ -36,7 +36,7 @@
 	68%{-webkit-transform:rotate(24deg)}
 	75%{-webkit-transform:rotate(0deg)}
 }
-@-o-keyframes wrenching {
+@-o-keyframes wrench {
 	0%{-o-transform:rotate(-12deg)}
 	8%{-o-transform:rotate(12deg)}
 	10%{-o-transform:rotate(24deg)}
@@ -53,7 +53,7 @@
 	68%{-o-transform:rotate(24deg)}
 	75%{-o-transform:rotate(0deg)}
 }
-@-ms-keyframes wrenching {
+@-ms-keyframes wrench {
 	0%{-ms-transform:rotate(-12deg)}
 	8%{-ms-transform:rotate(12deg)}
 	10%{-ms-transform:rotate(24deg)}
@@ -70,7 +70,7 @@
 	68%{-ms-transform:rotate(24deg)}
 	75%{-ms-transform:rotate(0deg)}
 }
-@keyframes wrenching {
+@keyframes wrench {
 	0%{transform:rotate(-12deg)}
 	8%{transform:rotate(12deg)}
 	10%{transform:rotate(24deg)}
@@ -87,31 +87,30 @@
 	68%{transform:rotate(24deg)}
 	75%{transform:rotate(0deg)}
 }
-.wrenching-animation.animation, .wrenching-animation.animation-hover:hover {
-	display: inline-block;
-	-moz-animation: wrenching 2.5s ease 4;
+.faa-wrench.animated, .faa-wrench.animated-hover:hover {
+	-moz-animation: wrench 2.5s ease infinite;
 	-moz-transform-origin-x: 90%;
 	-moz-transform-origin-y: 35%;
 	-moz-transform-origin-z: initial;
 
-	-webkit-animation: wrenching 2.5s ease 4;
+	-webkit-animation: wrench 2.5s ease infinite;
 	-webkit-transform-origin-x: 90%;
 	-webkit-transform-origin-y: 35%;
 	-webkit-transform-origin-z: initial;
 
-	-ms-animation: wrenching 2.5s ease 4;
+	-ms-animation: wrench 2.5s ease infinite;
 	-ms-transform-origin-x: 90%;
 	-ms-transform-origin-y: 35%;
 	-ms-transform-origin-z: initial;
 
-	animation: wrenching 2.5s ease 4;
+	animation: wrench 2.5s ease infinite;
 	transform-origin-x: 90%;
 	transform-origin-y: 35%;
 	transform-origin-z: initial;
 }
 
 /* BELL */
-@-moz-keyframes ringing {
+@-moz-keyframes ring {
 	0%{-moz-transform:rotate(-15deg)}
 	2%{-moz-transform:rotate(15deg)}
 	4%{-moz-transform:rotate(-18deg)}
@@ -124,7 +123,7 @@
 	18%{-moz-transform:rotate(12deg)}
 	20%{-moz-transform:rotate(0deg)}
 }
-@-webkit-keyframes ringing {
+@-webkit-keyframes ring {
 	0%{-webkit-transform:rotate(-15deg)}
 	2%{-webkit-transform:rotate(15deg)}
 	4%{-webkit-transform:rotate(-18deg)}
@@ -137,7 +136,7 @@
 	18%{-webkit-transform:rotate(12deg)}
 	20%{-webkit-transform:rotate(0deg)}
 }
-@-ms-keyframes ringing {
+@-ms-keyframes ring {
 	0%{-ms-transform:rotate(-15deg)}
 	2%{-ms-transform:rotate(15deg)}
 	4%{-ms-transform:rotate(-18deg)}
@@ -150,7 +149,7 @@
 	18%{-ms-transform:rotate(12deg)}
 	20%{-ms-transform:rotate(0deg)}
 }
-@keyframes ringing {
+@keyframes ring {
 	0%{transform:rotate(-15deg)}
 	2%{transform:rotate(15deg)}
 	4%{transform:rotate(-18deg)}
@@ -163,24 +162,23 @@
 	18%{transform:rotate(12deg)}
 	20%{transform:rotate(0deg)}
 }
-.ringing-animation.animation, .ringing-animation.animation-hover:hover {
-	display: inline-block;
-	-moz-animation: ringing 2s ease 5;
+.faa-ring.animated, .faa-ring.animated-hover:hover {
+	-moz-animation: ring 2s ease infinite;
 	-moz-transform-origin-x: 50%;
 	-moz-transform-origin-y: 0px;
 	-moz-transform-origin-z: initial;
 
-	-webkit-animation: ringing 2s ease 5;
+	-webkit-animation: ring 2s ease infinite;
 	-webkit-transform-origin-x: 50%;
 	-webkit-transform-origin-y: 0px;
 	-webkit-transform-origin-z: initial;
 
-	-ms-animation: ringing 2s ease 5;
+	-ms-animation: ring 2s ease infinite;
 	-ms-transform-origin-x: 50%;
 	-ms-transform-origin-y: 0px;
 	-ms-transform-origin-z: initial;
 
-	animation: ringing 2s ease 5;
+	animation: ring 2s ease infinite;
 	transform-origin-x: 50%;
 	transform-origin-y: 0px;
 	transform-origin-z: initial;
@@ -223,12 +221,11 @@
 	20%{transform:translate(0,3px)}
 	22%{transform:translate(0,0)}
 }
-.vertical-animation.animation, .vertical-animation.animation-hover:hover {
-	display: inline-block;
-	-moz-animation: vertical 2s ease 5;
-	-webkit-animation: vertical 2s ease 5;
-	-ms-animation: vertical 2s ease 5;
-	animation: vertical 2s ease 5;
+.faa-vertical.animated, .faa-vertical.animated-hover:hover {
+	-moz-animation: vertical 2s ease infinite;
+	-webkit-animation: vertical 2s ease infinite;
+	-ms-animation: vertical 2s ease infinite;
+	animation: vertical 2s ease infinite;
 }
 
 /* HORIZONTAL */
@@ -268,12 +265,11 @@
 	30%{transform:translate(5px,0)}
 	36%{transform:translate(0,0)}
 }
-.horizontal-animation.animation, .horizontal-animation.animation-hover:hover {
-	display:inline-block;
-	-moz-animation: horizontal 2s ease 5;
-	-webkit-animation: horizontal 2s ease 5;
-	-ms-animation: horizontal 2s ease 5;
-	animation: horizontal 2s ease 5;
+.faa-horizontal.animated, .faa-horizontal.animated-hover:hover {
+	-moz-animation: horizontal 2s ease infinite;
+	-webkit-animation: horizontal 2s ease infinite;
+	-ms-animation: horizontal 2s ease infinite;
+	animation: horizontal 2s ease infinite;
 }
 
 /* FLASHING */
@@ -293,10 +289,37 @@
 	0%,100%,50%{opacity:1}
 	25%,75%{opacity:0}
 }
-.flash-animation.animation, .flash-animation.animation-hover:hover {
-	display:inline-block;
-	-moz-animation: flash 2s ease 5;
-	-webkit-animation: flash 2s ease 5;
-	-ms-animation: flash 2s ease 5;
-	animation: flash 2s ease 5;
+.faa-flash.animated, .faa-flash.animated-hover:hover {
+	-moz-animation: flash 2s ease infinite;
+	-webkit-animation: flash 2s ease infinite;
+	-ms-animation: flash 2s ease infinite;
+	animation: flash 2s ease infinite;
+}
+
+/* BOUNCE */
+@-moz-keyframes bounce {
+	0%,100%,20%,50%,80%{-moz-transform:translateY(0)}
+	40%{-moz-transform:translateY(-15px)}
+	60%{-moz-transform:translateY(-15px)}
+}
+@-webkit-keyframes bounce {
+	0%,100%,20%,50%,80%{-webkit-transform:translateY(0)}
+	40%{-webkit-transform:translateY(-15px)}
+	60%{-webkit-transform:translateY(-15px)}
+}
+@-ms-keyframes bounce {
+	0%,100%,20%,50%,80%{-ms-transform:translateY(0)}
+	40%{-ms-transform:translateY(-15px)}
+	60%{-ms-transform:translateY(-15px)}
+}
+@keyframes bounce {
+	0%,10%,20%,50%,80%{transform:translateY(0)}
+	40%{transform:translateY(-15px)}
+	60%{transform:translateY(-15px)}
+}
+.faa-bounce.animated, .faa-bounce.animated-hover:hover {
+	-moz-animation: bounce 2s ease infinite;
+	-webkit-animation: bounce 2s ease infinite;
+	-ms-animation: bounce 2s ease infinite;
+	animation: bounce 2s ease infinite;
 }
