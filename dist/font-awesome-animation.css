@@ -347,3 +347,31 @@
 	-ms-animation: spin 1.5s linear infinite;
 	animation: spin 1.5s linear infinite;
 }
+
+/* FLOAT */
+@-moz-keyframes float{
+	0%{-moz-transform: translateY(0)}
+	50%{-moz-transform: translateY(-6px)}
+	100%{-moz-transform: translateY(0)}
+}
+@-webkit-keyframes float{
+	0%{-webkit-transform: translateY(0)}
+	50%{-webkit-transform: translateY(-6px)}
+	100%{-webkit-transform: translateY(0)}
+}
+@-ms-keyframes float{
+	0%{-ms-transform: translateY(0)}
+	50%{-ms-transform: translateY(-6px)}
+	100%{-ms-transform: translateY(0)}
+}
+@keyframes float{
+	0%{transform: translateY(0)}
+	50%{transform: translateY(-6px)}
+	100%{transform: translateY(0)}
+}
+.faa-float.animated, .faa-float.animated-hover:hover {
+	-moz-animation: float 2s linear infinite;
+	-webkit-animation: float 2s linear infinite;
+	-ms-animation: float 2s linear infinite;
+	animation: float 2s linear infinite;
+}
