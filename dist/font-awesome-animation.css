@@ -323,3 +323,27 @@
 	-ms-animation: bounce 2s ease infinite;
 	animation: bounce 2s ease infinite;
 }
+
+/* SPIN */
+@-moz-keyframes spin{
+	0%{-moz-transform:rotate(0deg)}
+	100%{-moz-transform:rotate(359deg)}
+}
+@-webkit-keyframes spin{
+	0%{-webkit-transform:rotate(0deg)}
+	100%{-webkit-transform:rotate(359deg)}
+}
+@-ms-keyframes spin{
+	0%{-ms-transform:rotate(0deg)}
+	100%{-ms-transform:rotate(359deg)}
+}
+@keyframes spin{
+	0%{transform:rotate(0deg)}
+	100%{transform:rotate(359deg)}
+}
+.faa-spin.animated, .faa-spin.animated-hover:hover {
+	-moz-animation: spin 1.5s linear infinite;
+	-webkit-animation: spin 1.5s linear infinite;
+	-ms-animation: spin 1.5s linear infinite;
+	animation: spin 1.5s linear infinite;
+}
