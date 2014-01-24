@@ -375,3 +375,31 @@
 	-ms-animation: float 2s linear infinite;
 	animation: float 2s linear infinite;
 }
+
+/* PULSE */
+@-moz-keyframes pulse {
+	0% {-moz-transform: scale(1.1)}
+ 	50% {-moz-transform: scale(0.8)}
+ 	100% {-moz-transform: scale(1)}
+}
+@-webkit-keyframes pulse {
+	0% {-webkit-transform: scale(1)}
+ 	50% {-webkit-transform: scale(0.8)}
+ 	100% {-webkit-transform: scale(1)}
+}
+@-ms-keyframes pulse {
+	0% {-ms-transform: scale(1.1)}
+ 	50% {-ms-transform: scale(0.8)}
+ 	100% {-ms-transform: scale(1)}
+}
+@keyframes pulse {
+	0% {transform: scale(1.1)}
+ 	50% {transform: scale(0.8)}
+ 	100% {transform: scale(1)}
+}
+.faa-pulse.animated, .faa-pulse.animated-hover:hover {
+	-moz-animation: pulse 2s linear infinite;
+	-webkit-animation: pulse 2s linear infinite;
+	-ms-animation: pulse 2s linear infinite;
+	animation: pulse 2s linear infinite;
+}
