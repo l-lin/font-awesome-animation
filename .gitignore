@@ -3,3 +3,5 @@ bin
 .tmp
 src/vendor
 *.iml
+.zedstate
+tags
