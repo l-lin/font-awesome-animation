@@ -367,7 +367,7 @@
 	100%{transform: translateY(0)}
 }
 .faa-float.animated, .faa-float.animated-hover:hover {
--	moz-animation: float 2s linear infinite;
+	-moz-animation: float 2s linear infinite;
 	-webkit-animation: float 2s linear infinite;
 	-ms-animation: float 2s linear infinite;
 	animation: float 2s linear infinite;
