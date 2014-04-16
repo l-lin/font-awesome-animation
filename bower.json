@@ -15,8 +15,17 @@
         "test",
         "node_modules",
         "src",
+        "vendor",
+        "data.json",
         "demo",
-        ".travis.yml"
+        ".travis.yml",
+        "favicon.png",
+        "index.html",
+        "README.md",
+        "server",
+        "styles",
+        "_config.yml",
+	    "grunt"
     ],
     "dependencies": {},
     "devDependencies": {}

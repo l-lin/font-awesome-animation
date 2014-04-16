@@ -1,7 +1,6 @@
 node_modules
 bin
 .tmp
-src/vendor
 *.iml
 .zedstate
 tags

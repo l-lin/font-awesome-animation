@@ -28,6 +28,26 @@ Usage
 ================
 See [live demo](https://l-lin.github.com/font-awesome-animation).
 
+Development
+================
+This project is using:
+* [GruntJS](http://gruntjs.com/) for adding prefixes and minification purpose
+* the CSS preprocessor [Myth](http://www.myth.io/) to generate the the prefixes for common browsers
+
+Getting started
+----------------
+You will need to install the dependencies:
+```
+$ npm install
+```
+
+Build
+----------------
+You can generate the CSS file with prefixes and the minified CSS file by executing the following command:
+```
+$ grunt
+```
+
 License
 ================
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
