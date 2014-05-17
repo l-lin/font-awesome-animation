@@ -124,3 +124,16 @@
 .faa-shake.animated, .faa-shake.animated-hover:hover {
 	animation: wrench 2.5s ease infinite;
 }
+
+/* TADA */
+@keyframes tada {
+	0% {transform: scale(1)}
+	10%,20% {transform:scale(.9) rotate(-8deg);}
+	30%,50%,70% {transform:scale(1.3) rotate(8deg)}
+	40%,60% {transform:scale(1.3) rotate(-8deg)}
+	80% {transform:scale(1) rotate(0)}
+}
+
+.faa-tada.animated, .faa-tada.animated-hover:hover {
+	animation: tada 2s linear infinite;
+}
