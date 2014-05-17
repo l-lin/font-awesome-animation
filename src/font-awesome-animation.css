@@ -137,3 +137,14 @@
 .faa-tada.animated, .faa-tada.animated-hover:hover {
 	animation: tada 2s linear infinite;
 }
+
+/* PASSING */
+@keyframes passing {
+	0% {transform:translateX(-50%); opacity:0}
+	50% {transform:translateX(0%); opacity:1}
+	100% {transform:translateX(50%); opacity:0}
+}
+
+.faa-passing.animated, .faa-passing.animated-hover:hover {
+	animation: passing 3s linear infinite;
+}
