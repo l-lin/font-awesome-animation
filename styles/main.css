@@ -211,12 +211,10 @@ pre code {
     clear:both;
 }
 
-.demo .font-animation {
-    float: left;
-    width: 400px;
-    margin-bottom: 20px;
+.demo > div {
+    margin-bottom: 40px;
 }
 
-.font-animation i {
+.demo i {
     font-size: 1.5em;
 }

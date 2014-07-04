@@ -16,7 +16,9 @@
 	68%{transform:rotate(24deg)}
 	75%{transform:rotate(0deg)}
 }
-.faa-wrench.animated, .faa-wrench.animated-hover:hover {
+.faa-wrench.animated,
+.faa-wrench.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-wrench {
 	animation: wrench 2.5s ease infinite;
 	transform-origin-x: 90%;
 	transform-origin-y: 35%;
@@ -37,7 +39,9 @@
 	18%{transform:rotate(12deg)}
 	20%{transform:rotate(0deg)}
 }
-.faa-ring.animated, .faa-ring.animated-hover:hover {
+.faa-ring.animated,
+.faa-ring.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-ring {
 	animation: ring 2s ease infinite;
 	transform-origin-x: 50%;
 	transform-origin-y: 0px;
@@ -54,7 +58,9 @@
 	20%{transform:translate(0,3px)}
 	22%{transform:translate(0,0)}
 }
-.faa-vertical.animated, .faa-vertical.animated-hover:hover {
+.faa-vertical.animated,
+.faa-vertical.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-vertical {
 	animation: vertical 2s ease infinite;
 }
 
@@ -68,7 +74,9 @@
 	30%{transform:translate(5px,0)}
 	36%{transform:translate(0,0)}
 }
-.faa-horizontal.animated, .faa-horizontal.animated-hover:hover {
+.faa-horizontal.animated,
+.faa-horizontal.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-horizontal {
 	animation: horizontal 2s ease infinite;
 }
 
@@ -77,7 +85,9 @@
 	0%,100%,50%{opacity:1}
 	25%,75%{opacity:0}
 }
-.faa-flash.animated, .faa-flash.animated-hover:hover {
+.faa-flash.animated,
+.faa-flash.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-flash {
 	animation: flash 2s ease infinite;
 }
 
@@ -87,7 +97,9 @@
 	40%{transform:translateY(-15px)}
 	60%{transform:translateY(-15px)}
 }
-.faa-bounce.animated, .faa-bounce.animated-hover:hover {
+.faa-bounce.animated,
+.faa-bounce.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-bounce {
 	animation: bounce 2s ease infinite;
 }
 
@@ -96,7 +108,9 @@
 	0%{transform:rotate(0deg)}
 	100%{transform:rotate(359deg)}
 }
-.faa-spin.animated, .faa-spin.animated-hover:hover {
+.faa-spin.animated,
+.faa-spin.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-spin {
 	animation: spin 1.5s linear infinite;
 }
 
@@ -106,7 +120,9 @@
 	50%{transform: translateY(-6px)}
 	100%{transform: translateY(0)}
 }
-.faa-float.animated, .faa-float.animated-hover:hover {
+.faa-float.animated,
+.faa-float.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-float {
 	animation: float 2s linear infinite;
 }
 
@@ -116,12 +132,16 @@
  	50% {transform: scale(0.8)}
  	100% {transform: scale(1.1)}
 }
-.faa-pulse.animated, .faa-pulse.animated-hover:hover {
+.faa-pulse.animated,
+.faa-pulse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-pulse {
 	animation: pulse 2s linear infinite;
 }
 
 /* SHAKE */
-.faa-shake.animated, .faa-shake.animated-hover:hover {
+.faa-shake.animated,
+.faa-shake.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-shake {
 	animation: wrench 2.5s ease infinite;
 }
 
@@ -134,7 +154,9 @@
 	80% {transform:scale(1) rotate(0)}
 }
 
-.faa-tada.animated, .faa-tada.animated-hover:hover {
+.faa-tada.animated,
+.faa-tada.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-tada {
 	animation: tada 2s linear infinite;
 }
 
@@ -145,6 +167,8 @@
 	100% {transform:translateX(50%); opacity:0}
 }
 
-.faa-passing.animated, .faa-passing.animated-hover:hover {
+.faa-passing.animated,
+.faa-passing.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-passing {
 	animation: passing 3s linear infinite;
 }
