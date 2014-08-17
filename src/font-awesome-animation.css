@@ -172,3 +172,15 @@
 .faa-parent.animated-hover:hover > .faa-passing {
 	animation: passing 3s linear infinite;
 }
+
+/* WAVE */
+@keyframes burst {
+	0% {opacity:.6}
+	50% {transform:scale(1.8);opacity:0}
+	100%{opacity:0}
+}
+.faa-burst.animated,
+.faa-burst.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-burst {
+	animation: burst 3s infinite linear
+}
