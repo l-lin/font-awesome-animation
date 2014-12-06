@@ -24,6 +24,14 @@
 	transform-origin-y: 35%;
 	transform-origin-z: initial;
 }
+.faa-wrench.animated.faa-speed-fast,
+.faa-wrench.animated-hover.faa-speed-fast:hover,
+.faa-parent.animated-hover:hover > .faa-wrench.faa-speed-fast {
+	animation: wrench 1.2s ease infinite;
+	transform-origin-x: 90%;
+	transform-origin-y: 35%;
+	transform-origin-z: initial;
+}
 
 /* BELL */
 @keyframes ring {
@@ -47,6 +55,14 @@
 	transform-origin-y: 0px;
 	transform-origin-z: initial;
 }
+.faa-ring.animated.faa-speed-fast,
+.faa-ring.animated-hover.faa-speed-fast:hover,
+.faa-parent.animated-hover:hover > .faa-ring.faa-speed-fast {
+	animation: ring 1s ease infinite;
+	transform-origin-x: 50%;
+	transform-origin-y: 0px;
+	transform-origin-z: initial;
+}
 
 /* VERTICAL */
 @keyframes vertical {
@@ -62,6 +78,11 @@
 .faa-vertical.animated-hover:hover,
 .faa-parent.animated-hover:hover > .faa-vertical {
 	animation: vertical 2s ease infinite;
+}
+.faa-vertical.animated.faa-speed-fast,
+.faa-vertical.animated-hover.faa-speed-fast:hover,
+.faa-parent.animated-hover:hover > .faa-vertical.faa-speed-fast {
+	animation: vertical 1s ease infinite;
 }
 
 /* HORIZONTAL */
@@ -79,6 +100,11 @@
 .faa-parent.animated-hover:hover > .faa-horizontal {
 	animation: horizontal 2s ease infinite;
 }
+.faa-horizontal.animated.faa-speed-fast,
+.faa-horizontal.animated-hover.faa-speed-fast:hover,
+.faa-parent.animated-hover:hover > .faa-horizontal.faa-speed-fast {
+	animation: horizontal 1s ease infinite;
+}
 
 /* FLASHING */
 @keyframes flash {
@@ -89,6 +115,11 @@
 .faa-flash.animated-hover:hover,
 .faa-parent.animated-hover:hover > .faa-flash {
 	animation: flash 2s ease infinite;
+}
+.faa-flash.animated.faa-speed-fast,
+.faa-flash.animated-hover.faa-speed-fast:hover,
+.faa-parent.animated-hover:hover > .faa-flash.faa-speed-fast {
+	animation: flash 1s ease infinite;
 }
 
 /* BOUNCE */
@@ -102,6 +133,11 @@
 .faa-parent.animated-hover:hover > .faa-bounce {
 	animation: bounce 2s ease infinite;
 }
+.faa-bounce.animated.faa-speed-fast,
+.faa-bounce.animated-hover.faa-speed-fast:hover,
+.faa-parent.animated-hover:hover > .faa-bounce.faa-speed-fast {
+	animation: bounce 1s ease infinite;
+}
 
 /* SPIN */
 @keyframes spin{
@@ -112,6 +148,11 @@
 .faa-spin.animated-hover:hover,
 .faa-parent.animated-hover:hover > .faa-spin {
 	animation: spin 1.5s linear infinite;
+}
+.faa-spin.animated.faa-speed-fast,
+.faa-spin.animated-hover.faa-speed-fast:hover,
+.faa-parent.animated-hover:hover > .faa-spin.faa-speed-fast {
+	animation: spin 0.7s linear infinite;
 }
 
 /* FLOAT */
@@ -125,6 +166,11 @@
 .faa-parent.animated-hover:hover > .faa-float {
 	animation: float 2s linear infinite;
 }
+.faa-float.animated.faa-speed-fast,
+.faa-float.animated-hover.faa-speed-fast:hover,
+.faa-parent.animated-hover:hover > .faa-float.faa-speed-fast {
+	animation: float 1s linear infinite;
+}
 
 /* PULSE */
 @keyframes pulse {
@@ -137,12 +183,22 @@
 .faa-parent.animated-hover:hover > .faa-pulse {
 	animation: pulse 2s linear infinite;
 }
+.faa-pulse.animated.faa-speed-fast,
+.faa-pulse.animated-hover.faa-speed-fast:hover,
+.faa-parent.animated-hover:hover > .faa-pulse.faa-speed-fast {
+	animation: pulse 1s linear infinite;
+}
 
 /* SHAKE */
 .faa-shake.animated,
 .faa-shake.animated-hover:hover,
 .faa-parent.animated-hover:hover > .faa-shake {
 	animation: wrench 2.5s ease infinite;
+}
+.faa-shake.animated.faa-speed-fast,
+.faa-shake.animated-hover.faa-speed-fast:hover,
+.faa-parent.animated-hover:hover > .faa-shake.faa-speed-fast {
+	animation: wrench 1.2s ease infinite;
 }
 
 /* TADA */
@@ -159,6 +215,11 @@
 .faa-parent.animated-hover:hover > .faa-tada {
 	animation: tada 2s linear infinite;
 }
+.faa-tada.animated.faa-speed-fast,
+.faa-tada.animated-hover.faa-speed-fast:hover,
+.faa-parent.animated-hover:hover > .faa-tada.faa-speed-fast {
+	animation: tada 1s linear infinite;
+}
 
 /* PASSING */
 @keyframes passing {
@@ -172,6 +233,12 @@
 .faa-parent.animated-hover:hover > .faa-passing {
 	animation: passing 3s linear infinite;
 }
+.faa-passing.animated.faa-speed-fast,
+.faa-passing.animated-hover.faa-speed-fast:hover,
+.faa-parent.animated-hover:hover > .faa-passing.faa-speed-fast {
+	animation: passing 1s linear infinite;
+}
+
 
 /* WAVE */
 @keyframes burst {
@@ -183,4 +250,9 @@
 .faa-burst.animated-hover:hover,
 .faa-parent.animated-hover:hover > .faa-burst {
 	animation: burst 3s infinite linear
+}
+.faa-burst.animated.faa-speed-fast,
+.faa-burst.animated-hover.faa-speed-fast:hover,
+.faa-parent.animated-hover:hover > .faa-burst.faa-speed-fast {
+	animation: burst 1s infinite linear
 }
