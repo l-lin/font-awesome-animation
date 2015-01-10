@@ -1,6 +1,6 @@
 {
 	"name": "font-awesome-animation",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"author": "l-lin",
 	"main": [
         "dist/font-awesome-animation.css",
