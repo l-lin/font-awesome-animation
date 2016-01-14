@@ -1045,7 +1045,7 @@
 
 .faa-passing-reverse.animated,
 .faa-passing-reverse.animated-hover:hover,
-.faa-parent.animated-hover:hover > .faa-passing {
+.faa-parent.animated-hover:hover > .faa-passing-reverse {
   -webkit-animation: passing-reverse 2s linear infinite;
   animation: passing-reverse 2s linear infinite;
 }
