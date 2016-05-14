@@ -14,7 +14,6 @@
         "Gruntfile.js",
         "test",
         "node_modules",
-        "src",
         "vendor",
         "data.json",
         "demo",
