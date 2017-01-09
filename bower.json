@@ -1,7 +1,9 @@
 {
 	"name": "font-awesome-animation",
+	"description": "Simple animations using FontAwesome and some CSS3.",
 	"version": "0.0.9",
 	"author": "l-lin",
+	"license": "MIT",
 	"main": [
         "dist/font-awesome-animation.css",
         "dist/font-awesome-animation.min.css"
