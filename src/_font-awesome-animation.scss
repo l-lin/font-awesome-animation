@@ -317,7 +317,7 @@
 	animation: passing-reverse 3s linear infinite;
 }
 
-/* WAVE */
+/* BURST */
 @keyframes burst {
 	0% {opacity:.6}
 	50% {transform:scale(1.8);opacity:0}
@@ -337,4 +337,27 @@
 .faa-burst.animated-hover.faa-slow:hover,
 .faa-parent.animated-hover:hover > .faa-burst.faa-slow {
 	animation: burst 3s infinite linear
+}
+
+/* FALLING */
+@keyframes falling {
+    0% {transform:translateY(-50%); opacity:0}
+    50% {transform:translateY(0%); opacity:1}
+    100% {transform:translateY(50%); opacity:0}
+}
+
+.faa-falling.animated,
+.faa-falling.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-falling {
+	animation: falling 2s linear infinite;
+}
+.faa-falling.animated.faa-fast,
+.faa-falling.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-falling.faa-fast {
+	animation: falling 1s linear infinite;
+}
+.faa-falling.animated.faa-slow,
+.faa-falling.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-falling.faa-slow {
+	animation: falling 3s linear infinite;
 }

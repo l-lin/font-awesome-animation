@@ -218,3 +218,7 @@ pre code {
 .demo i {
     font-size: 1.5em;
 }
+
+.demo a {
+    font-size: 12px;
+}

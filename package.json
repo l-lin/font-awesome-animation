@@ -1,9 +1,9 @@
 {
-	"name": "font-awesome-animation",
-	"version": "0.0.10",
-	"dependencies": {},
-	"author": "l-lin",
-	"devDependencies": {
+    "name": "font-awesome-animation",
+    "version": "0.0.10",
+    "dependencies": {},
+    "author": "l-lin",
+    "devDependencies": {
         "grunt": "~0.4.1",
         "grunt-express": "1.2.0",
         "grunt-contrib-watch": "~0.5.2",
