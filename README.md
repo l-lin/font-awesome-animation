@@ -8,18 +8,22 @@ Getting started
 Download
 ----------------
 ### Manually
+
 The files can be downloaded from:
+
 * Minified [CSS](https://raw.githubusercontent.com/l-lin/font-awesome-animation/master/dist/font-awesome-animation.min.css) for production usage
 * Un-minified [CSS](https://raw.githubusercontent.com/l-lin/font-awesome-animation/master/dist/font-awesome-animation.css) for development
 
 ### With BowerJS
-```
-$ bower install font-awesome-animation
+
+```bash
+bower install font-awesome-animation
 ```
 
 Installation
 ----------------
 Include CSS file in your index.html file: 
+
 ```html
 <link rel="stylesheet" href="font-awesome-animation.min.css">
 ```
@@ -32,22 +36,25 @@ Development
 ================
 This project is using:
 * [GruntJS](http://gruntjs.com/) for adding prefixes and minification purpose
-* the CSS preprocessor [Myth](http://www.myth.io/) to generate the the prefixes for common browsers
+* the CSS preprocessor [Myth](http://www.myth.io/) to generate the prefixes for common browsers
 
 Getting started
 ----------------
 You will need to install the dependencies:
-```
-$ npm install
+
+```bash
+npm install
 ```
 
 Build
 ----------------
 You can generate the CSS file with prefixes and the minified CSS file by executing the following command:
-```
-$ grunt
+
+```bash
+grunt
 ```
 
 License
 ================
+
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
