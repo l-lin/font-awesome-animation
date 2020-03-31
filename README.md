@@ -11,8 +11,8 @@ Download
 
 The files can be downloaded from:
 
-* Minified [CSS](https://raw.githubusercontent.com/l-lin/font-awesome-animation/master/dist/font-awesome-animation.min.css) for production usage
-* Un-minified [CSS](https://raw.githubusercontent.com/l-lin/font-awesome-animation/master/dist/font-awesome-animation.css) for development
+* Minified [CSS](https://raw.githubusercontent.com/l-lin/font-awesome-animation/0.3.0/dist/font-awesome-animation.min.css) for production usage
+* Un-minified [CSS](https://raw.githubusercontent.com/l-lin/font-awesome-animation/0.3.0/dist/font-awesome-animation.css) for development
 
 ### With BowerJS
 
