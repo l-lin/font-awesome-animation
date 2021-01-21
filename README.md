@@ -1,4 +1,4 @@
-# font-awesome-animation
+# font-awesome-animation ![build](https://github.com/l-lin/font-awesome-animation/workflows/build/badge.svg) [![npm version](https://badge.fury.io/js/font-awesome-animation.svg)](https://badge.fury.io/js/font-awesome-animation)
 
 > Simple animations using some CSS3 I found on the web.
 > Best used on glyphicons like [FontAwesome](http://fortawesome.github.io/Font-Awesome/).
