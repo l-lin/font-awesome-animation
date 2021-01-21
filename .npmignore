@@ -70,7 +70,6 @@ Gruntfile.js
 index.html
 .jshintrc
 styles
-src
 .bowerrc
 _config.yml
 vendor

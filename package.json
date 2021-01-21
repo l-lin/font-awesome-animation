@@ -1,26 +1,29 @@
 {
-    "name": "font-awesome-animation",
-    "version": "0.3.0",
-    "dependencies": {},
-    "author": "l-lin",
-    "devDependencies": {
-        "express": "~4.16.2",
-        "grunt": "~1.0.1",
-        "grunt-contrib-clean": "~1.1.0",
-        "grunt-contrib-concat": "~1.0.1",
-        "grunt-contrib-cssmin": "~2.2.1",
-        "grunt-contrib-watch": "~1.0.0",
-        "grunt-express": "~1.4.1",
-        "grunt-myth": "~1.1.0",
-        "jshint-stylish": "~2.2.1",
-        "load-grunt-config": "~0.19.2",
-        "load-grunt-tasks": "~3.5.2",
-        "time-grunt": "~0.2.0"
-    },
-    "engines": {
-        "node": ">=6.0.0"
-    },
-    "scripts": {
-        "test": "grunt test"
-    }
+  "name": "font-awesome-animation",
+  "version": "0.3.0",
+  "dependencies": {},
+  "author": "l-lin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/l-lin/font-awesome-animation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/l-lin/font-awesome-animation/issues"
+  },
+  "homepage": "https://l-lin.github.io/font-awesome-animation",
+  "devDependencies": {
+    "cssmin": "~0.4.3",
+    "myth6": "~1.5.0",
+    "rimraf": "~3.0.2"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run myth && npm run cssmin",
+    "clean": "rimraf -f dist",
+    "cssmin": "cssmin dist/font-awesome-animation.css > dist/font-awesome-animation.min.css",
+    "myth": "mkdir -p dist && myth src/font-awesome-animation.css dist/font-awesome-animation.css --sourcemap"
+  }
 }
