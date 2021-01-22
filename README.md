@@ -46,5 +46,5 @@ npm run build
 
 [FontAwesome]: https://fontawesome.com/
 [npm-link]: https://www.npmjs.com/package/font-awesome-animation
-[cnd-link]: https://www.jsdelivr.com/package/npm/font-awesome-animation
+[cdn-link]: https://www.jsdelivr.com/package/npm/font-awesome-animation
 
