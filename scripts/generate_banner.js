@@ -2,11 +2,7 @@ const Handlebars = require('handlebars');
 const fs = require('fs');
 const pjson = require('../package.json');
 
-const template = Handlebars.compile('/*!\n' +
-  ' * {{ name }} - v{{ version }}\n' +
-  ' * https://github.com/{{ author }}/{{ name }}\n' +
-  ' * License: MIT\n' +
-  ' */');
+const template = Handlebars.compile('/*! {{ name }} v{{ version }} | MIT License | https://github.com/{{ author }}/{{ name }} */');
 
 const result = template(pjson);
 

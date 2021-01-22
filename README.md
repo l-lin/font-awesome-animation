@@ -1,17 +1,26 @@
-# font-awesome-animation ![build](https://github.com/l-lin/font-awesome-animation/workflows/build/badge.svg) [![npm version](https://badge.fury.io/js/font-awesome-animation.svg)](https://badge.fury.io/js/font-awesome-animation)
+# font-awesome-animation 
 
 > Simple animations using some CSS3 I found on the web.
-> Best used on glyphicons like [FontAwesome](http://fortawesome.github.io/Font-Awesome/).
+> Best used on glyphicons like [FontAwesome][]
+
+![build](https://github.com/l-lin/font-awesome-animation/workflows/build/badge.svg)
+[![npm](https://img.shields.io/npm/v/font-awesome-animation.svg)][npm-link]
+[![npm](https://img.shields.io/npm/dm/font-awesome-animation.svg)][npm-link]
+[![jsdelivr](https://data.jsdelivr.com/v1/package/npm/font-awesome-animation/badge?style=rounded)][cdn-link]
 
 ## Getting started
 
-Add
+Install from NPM:
 
 ```bash
 npm install font-awesome-animation
 ```
 
-Include CSS file in your index.html file: 
+Or with a CDN:
+
+[https://www.jsdelivr.com/package/npm/font-awesome-animation][cdn-link]
+
+Include CSS file in your index.html file:
 
 ```html
 <link rel="stylesheet" href="font-awesome-animation.min.css">
@@ -22,11 +31,6 @@ Include CSS file in your index.html file:
 See [live demo](https://l-lin.github.com/font-awesome-animation).
 
 ## Development
-
-This project is using:
-
-- the CSS preprocessor [Myth](http://www.myth.io/) to generate the prefixes for common browsers
-
 
 ```bash
 # install dependencies
@@ -39,4 +43,8 @@ npm run build
 ## License
 
 [MIT License](LICENSE)
+
+[FontAwesome]: https://fontawesome.com/
+[npm-link]: https://www.npmjs.com/package/font-awesome-animation
+[cnd-link]: https://www.jsdelivr.com/package/npm/font-awesome-animation
 
