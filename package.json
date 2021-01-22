@@ -13,7 +13,8 @@
   },
   "homepage": "https://l-lin.github.io/font-awesome-animation",
   "devDependencies": {
-    "cssmin": "~0.4.3",
+    "concat": "~1.0.3",
+    "handlebars": "~4.7.6",
     "myth6": "~1.5.0",
     "rimraf": "~3.0.2"
   },
@@ -21,9 +22,12 @@
     "node": ">=12.0.0"
   },
   "scripts": {
-    "build": "npm run clean && npm run myth && npm run cssmin",
-    "clean": "rimraf -f dist",
-    "cssmin": "cssmin dist/font-awesome-animation.css > dist/font-awesome-animation.min.css",
-    "myth": "mkdir -p dist && myth src/font-awesome-animation.css dist/font-awesome-animation.css --sourcemap"
+    "build": "npm run clean && npm run init:folders && npm run transform && npm run transform:compress && npm run generate:banner && npm run concat:banner",
+    "clean": "rimraf -f build dist",
+    "concat:banner": "concat build/banner.css build/$npm_package_name.css -o dist/$npm_package_name.css && concat build/banner.css build/$npm_package_name.min.css -o dist/$npm_package_name.min.css",
+    "generate:banner": "node scripts/generate_banner.js build/banner.css",
+    "init:folders": "mkdir -p build && mkdir -p dist",
+    "transform": "myth src/font-awesome-animation.css build/$npm_package_name.css --sourcemap",
+    "transform:compress": "myth src/font-awesome-animation.css build/$npm_package_name.min.css --sourcemap --compress"
   }
 }
