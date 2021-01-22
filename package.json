@@ -31,5 +31,9 @@
     "transform:compress": "myth src/font-awesome-animation.css build/$npm_package_name.min.css --sourcemap --compress",
     "version": "npm run build",
     "postversion": "git push && git push --tags"
-  }
+  },
+  "files": [
+    "css",
+    "sass"
+  ]
 }
