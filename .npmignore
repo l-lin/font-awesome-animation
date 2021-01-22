@@ -73,3 +73,5 @@ styles
 .bowerrc
 _config.yml
 vendor
+build
+scripts
