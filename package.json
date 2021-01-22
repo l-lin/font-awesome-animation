@@ -28,6 +28,8 @@
     "generate:banner": "node scripts/generate_banner.js build/banner.css",
     "init:folders": "mkdir -p build && mkdir -p dist",
     "transform": "myth src/font-awesome-animation.css build/$npm_package_name.css --sourcemap",
-    "transform:compress": "myth src/font-awesome-animation.css build/$npm_package_name.min.css --sourcemap --compress"
+    "transform:compress": "myth src/font-awesome-animation.css build/$npm_package_name.min.css --sourcemap --compress",
+    "version": "npm run build",
+    "postversion": "git push && git push --tags"
   }
 }

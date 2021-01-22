@@ -24,6 +24,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run a one-line script
+      - name: Run build
         run: npm run build
 
