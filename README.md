@@ -27,8 +27,38 @@ Include CSS file in your index.html file:
 ```
 
 ## Usage
+### On DOM load
 
-See [live demo](https://l-lin.github.com/font-awesome-animation).
+Add the desired CSS class `faa-xxx` along with `animated` to the icon (or any element of your DOM):
+
+```html
+<i class="fa fa-wrench faa-wrench animated"></i>
+```
+
+### On hover
+
+Instead of using `animated`, use the `animated-hover` CSS class:
+
+```html
+<i class="fa fa-wrench faa-wrench animated-hover"></i>
+```
+
+### On parent element hover
+
+For parent hover, add the CSS class `faa-parent` and `animated-hover` on the parent element:
+
+```html
+<a href="#" class="faa-parent animated-hover">
+  <i class="fa fa-wrench faa-wrench"></i>
+</a>
+```
+
+You can regulate the speed of the animation by adding the CSS class `faa-fast` or `faa-slow`:
+
+```html
+<i class="fa fa-wrench faa-wrench animated faa-fast"></i>
+<i class="fa fa-wrench faa-wrench animated faa-slow"></i>
+```
 
 ## Development
 
