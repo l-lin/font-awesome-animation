@@ -35,7 +35,7 @@
     "concat:banner": "concat build/banner.css css/$npm_package_name.css -o css/$npm_package_name.css && concat build/banner.css css/$npm_package_name.min.css -o css/$npm_package_name.min.css",
     "generate:banner": "mkdir -p build && node scripts/generate_banner.js build/banner.css",
     "generate:main": "node scripts/generate_main.js scss $npm_package_name.scss",
-    "version": "npm run build",
+    "version": "npm run build && git add -A css",
     "postversion": "git push && git push --tags"
   },
   "files": [
