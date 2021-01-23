@@ -40,6 +40,7 @@
   },
   "files": [
     "css",
-    "scss"
+    "scss",
+    "font-awesome-animation.scss"
   ]
 }
