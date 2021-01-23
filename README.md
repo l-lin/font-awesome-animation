@@ -86,6 +86,7 @@ You can regulate the speed of the animation by adding the CSS class `faa-fast` o
 |<a href="#"><i class="fa fa-star-o faa-rising animated"></i>&nbsp;faa-rising animated</a>|<a href="#"><i class="fa fa-star-o faa-rising animated-hover"></i>&nbsp;faa-rising animated-hover</a>|<a href="#" class="faa-parent animated-hover"><i class="fa fa-star-o faa-rising"></i>&nbsp;faa-rising</a>|
 
 ## Development
+### Build
 
 ```bash
 # install dependencies
@@ -95,10 +96,23 @@ npm install
 npm run build
 ```
 
+### Local preview
+
 To test in local, you can use:
 
 - [http-server][]: server local http server to the `css/` folder
 - any markdown preview to serve this README.md as a webpage (e.g. [markdown-preview.nvim][])
+
+### Release
+
+```sh
+# this will create a new version and push to remote repository
+npm version [<newversion> | major | minor | patch]
+```
+
+Then go to the [release page](https://github.com/l-lin/font-awesome-animation/releases) and manually
+create a new release. There is an automatic [Github action](./.github/workflows/publish.yml) that
+publishes automatically to NPM repository.
 
 ## License
 
