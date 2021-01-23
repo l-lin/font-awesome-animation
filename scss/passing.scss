@@ -1,0 +1,29 @@
+@keyframes passing {
+  0% {
+    transform:translateX(-50%);
+    opacity:0;
+  }
+  50% {
+    transform:translateX(0%);
+    opacity:1;
+  }
+  100% {
+    transform:translateX(50%);
+    opacity:0;
+  }
+}
+.faa-passing.animated,
+.faa-passing.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-passing {
+  animation: passing 2s linear infinite;
+}
+.faa-passing.animated.faa-fast,
+.faa-passing.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-passing.faa-fast {
+  animation: passing 1s linear infinite;
+}
+.faa-passing.animated.faa-slow,
+.faa-passing.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-passing.faa-slow {
+  animation: passing 3s linear infinite;
+}

@@ -1,0 +1,26 @@
+@keyframes bounce {
+  0%,10%,20%,50%,80%,100% {
+    transform:translateY(0);
+  }
+  40% {
+    transform:translateY(-15px);
+  }
+  60% {
+    transform:translateY(-15px);
+  }
+}
+.faa-bounce.animated,
+.faa-bounce.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-bounce {
+  animation: bounce 2s ease infinite;
+}
+.faa-bounce.animated.faa-fast,
+.faa-bounce.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-bounce.faa-fast {
+  animation: bounce 1s ease infinite;
+}
+.faa-bounce.animated.faa-slow,
+.faa-bounce.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-bounce.faa-slow {
+  animation: bounce 3s ease infinite;
+}

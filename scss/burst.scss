@@ -1,0 +1,27 @@
+@keyframes burst {
+  0% {
+    opacity:.6;
+  }
+  50% {
+    transform:scale(1.8);
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
+}
+.faa-burst.animated,
+.faa-burst.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-burst {
+  animation: burst 2s infinite linear;
+}
+.faa-burst.animated.faa-fast,
+.faa-burst.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-burst.faa-fast {
+  animation: burst 1s infinite linear;
+}
+.faa-burst.animated.faa-slow,
+.faa-burst.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-burst.faa-slow {
+  animation: burst 3s infinite linear;
+}

@@ -1,0 +1,29 @@
+@keyframes rising {
+  0% {
+    transform:translateY(50%);
+    opacity:0;
+  }
+  50% {
+    transform:translateY(0%);
+    opacity:1;
+  }
+  100% {
+    transform:translateY(-50%);
+    opacity:0;
+  }
+}
+.faa-rising.animated,
+.faa-rising.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-rising {
+  animation: rising 2s linear infinite;
+}
+.faa-rising.animated.faa-fast,
+.faa-rising.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-rising.faa-fast {
+  animation: rising 1s linear infinite;
+}
+.faa-rising.animated.faa-slow,
+.faa-rising.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-rising.faa-slow {
+  animation: rising 3s linear infinite;
+}

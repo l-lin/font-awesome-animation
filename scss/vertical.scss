@@ -1,0 +1,38 @@
+@keyframes vertical {
+  0% {
+    transform:translate(0,-3px);
+  }
+  4% {
+    transform:translate(0,3px);
+  }
+  8% {
+    transform:translate(0,-3px);
+  }
+  12% {
+    transform:translate(0,3px);
+  }
+  16% {
+    transform:translate(0,-3px);
+  }
+  20% {
+    transform:translate(0,3px);
+  }
+  22%,100% {
+    transform:translate(0,0);
+  }
+}
+.faa-vertical.animated,
+.faa-vertical.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-vertical {
+  animation: vertical 2s ease infinite;
+}
+.faa-vertical.animated.faa-fast,
+.faa-vertical.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-vertical.faa-fast {
+  animation: vertical 1s ease infinite;
+}
+.faa-vertical.animated.faa-slow,
+.faa-vertical.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-vertical.faa-slow {
+  animation: vertical 4s ease infinite;
+}
