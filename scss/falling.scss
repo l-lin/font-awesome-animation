@@ -1,3 +1,4 @@
+$faa-falling-speed: 2s;
 @keyframes falling {
   0% {
     transform:translateY(-50%);
@@ -12,18 +13,56 @@
     opacity:0;
   }
 }
+@keyframes falling-reverse {
+  0% {
+    transform:translateY(50%);
+    opacity:0;
+  }
+  50% {
+    transform:translateY(0%);
+    opacity:1;
+  }
+  100% {
+    transform:translateY(-50%);
+    opacity:0;
+  }
+}
 .faa-falling.animated,
 .faa-falling.animated-hover:hover,
 .faa-parent.animated-hover:hover > .faa-falling {
-  animation: falling 2s linear infinite;
+  animation: falling $faa-falling-speed linear infinite;
 }
 .faa-falling.animated.faa-fast,
 .faa-falling.animated-hover.faa-fast:hover,
 .faa-parent.animated-hover:hover > .faa-falling.faa-fast {
-  animation: falling 1s linear infinite;
+  animation: falling ($faa-falling-speed * $faa-speed-coeff-fast) linear infinite;
 }
 .faa-falling.animated.faa-slow,
 .faa-falling.animated-hover.faa-slow:hover,
 .faa-parent.animated-hover:hover > .faa-falling.faa-slow {
-  animation: falling 3s linear infinite;
+  animation: falling ($faa-falling-speed * $faa-speed-coeff-slow) linear infinite;
+}
+.faa-falling.faa-reverse.animated,
+.faa-falling.faa-reverse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-falling.faa-reverse,
+.faa-rising.animated,
+.faa-rising.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-rising {
+  animation: falling-reverse $faa-falling-speed linear infinite;
+}
+.faa-falling.faa-reverse.animated.faa-fast,
+.faa-falling.faa-reverse.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-falling.faa-reverse.faa-fast,
+.faa-rising.animated.faa-fast,
+.faa-rising.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-rising.faa-fast {
+  animation: falling-reverse ($faa-falling-speed * $faa-speed-coeff-fast) linear infinite;
+}
+.faa-falling.faa-reverse.animated.faa-slow,
+.faa-falling.faa-reverse.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-falling.faa-reverse.faa-slow,
+.faa-rising.animated.faa-slow,
+.faa-rising.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-rising.faa-slow {
+  animation: falling-reverse ($faa-falling-speed * $faa-speed-coeff-slow) linear infinite;
 }

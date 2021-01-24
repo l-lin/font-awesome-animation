@@ -1,29 +1,59 @@
+$faa-passing-speed: 2s;
 @keyframes passing {
   0% {
-    transform:translateX(-50%);
-    opacity:0;
+    transform: translateX(-50%);
+    opacity: 0;
   }
   50% {
-    transform:translateX(0%);
-    opacity:1;
+    transform: translateX(0%);
+    opacity: 1;
   }
   100% {
-    transform:translateX(50%);
-    opacity:0;
+    transform: translateX(50%);
+    opacity: 0;
+  }
+}
+@keyframes passing-reverse {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%);
+    opacity: 0;
   }
 }
 .faa-passing.animated,
 .faa-passing.animated-hover:hover,
 .faa-parent.animated-hover:hover > .faa-passing {
-  animation: passing 2s linear infinite;
+  animation: passing $faa-passing-speed linear infinite;
 }
 .faa-passing.animated.faa-fast,
 .faa-passing.animated-hover.faa-fast:hover,
 .faa-parent.animated-hover:hover > .faa-passing.faa-fast {
-  animation: passing 1s linear infinite;
+  animation: passing ($faa-passing-speed * $faa-speed-coeff-fast) linear infinite;
 }
 .faa-passing.animated.faa-slow,
 .faa-passing.animated-hover.faa-slow:hover,
 .faa-parent.animated-hover:hover > .faa-passing.faa-slow {
-  animation: passing 3s linear infinite;
+  animation: passing ($faa-passing-speed * $faa-speed-coeff-slow) linear infinite;
+}
+.faa-passing.faa-reverse.animated,
+.faa-passing.faa-reverse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-passing.faa-reverse {
+  animation: passing-reverse $faa-passing-speed linear infinite;
+}
+.faa-passing.faa-reverse.animated.faa-fast,
+.faa-passing.faa-reverse.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-passing.reverse.faa-fast {
+  animation: passing-reverse ($faa-passing-speed * $faa-speed-coeff-fast) linear infinite;
+}
+.faa-passing.faa-reverse.animated.faa-slow,
+.faa-passing.faa-reverse.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-passing.faa-reverse.faa-slow {
+  animation: passing-reverse ($faa-passing-speed * $faa-speed-coeff-slow) linear infinite;
 }

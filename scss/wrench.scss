@@ -1,54 +1,25 @@
+$faa-wrench-speed: 2.5s;
 @keyframes wrench {
   0% {
-    transform:rotate(-12deg);
+    transform: rotate(-12deg);
   }
   8% {
-    transform:rotate(12deg);
+    transform: rotate(12deg);
   }
-  10% {
-    transform:rotate(24deg);
+  10%, 28%, 30%, 48%, 50%, 68% {
+    transform: rotate(24deg);
   }
-  18% {
-    transform:rotate(-24deg);
-  }
-  20% {
-    transform:rotate(-24deg);
-  }
-  28% {
-    transform:rotate(24deg);
-  }
-  30% {
-    transform:rotate(24deg);
-  }
-  38% {
-    transform:rotate(-24deg);
-  }
-  40% {
-    transform:rotate(-24deg);
-  }
-  48% {
-    transform:rotate(24deg);
-  }
-  50% {
-    transform:rotate(24deg);
-  }
-  58% {
-    transform:rotate(-24deg);
-  }
-  60% {
-    transform:rotate(-24deg);
-  }
-  68% {
-    transform:rotate(24deg);
+  18%, 20%, 38%, 40%, 58%, 60% {
+    transform: rotate(-24deg);
   }
   75%,100% {
-    transform:rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 .faa-wrench.animated,
 .faa-wrench.animated-hover:hover,
 .faa-parent.animated-hover:hover > .faa-wrench {
-  animation: wrench 2.5s ease infinite;
+  animation: wrench $faa-wrench-speed ease infinite;
   transform-origin-x: 90%;
   transform-origin-y: 35%;
   transform-origin-z: initial;
@@ -56,10 +27,10 @@
 .faa-wrench.animated.faa-fast,
 .faa-wrench.animated-hover.faa-fast:hover,
 .faa-parent.animated-hover:hover > .faa-wrench.faa-fast {
-  animation: wrench 1.2s ease infinite;
+  animation: wrench ($faa-wrench-speed * $faa-speed-coeff-fast) ease infinite;
 }
 .faa-wrench.animated.faa-slow,
 .faa-wrench.animated-hover.faa-slow:hover,
 .faa-parent.animated-hover:hover > .faa-wrench.faa-slow {
-  animation: wrench 3.7s ease infinite;
+  animation: wrench ($faa-wrench-speed * $faa-speed-coeff-slow) ease infinite;
 }

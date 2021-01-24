@@ -1,26 +1,47 @@
+$faa-bounce-speed: 2s;
 @keyframes bounce {
-  0%,10%,20%,50%,80%,100% {
-    transform:translateY(0);
+  0%, 10%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
   }
-  40% {
-    transform:translateY(-15px);
+  40%, 60% {
+    transform: translateY(-15px);
   }
-  60% {
-    transform:translateY(-15px);
+}
+@keyframes bounce-reverse {
+  0%, 10%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40%, 60% {
+    transform: translateY(15px);
   }
 }
 .faa-bounce.animated,
 .faa-bounce.animated-hover:hover,
 .faa-parent.animated-hover:hover > .faa-bounce {
-  animation: bounce 2s ease infinite;
+  animation: bounce $faa-bounce-speed ease infinite;
 }
 .faa-bounce.animated.faa-fast,
 .faa-bounce.animated-hover.faa-fast:hover,
 .faa-parent.animated-hover:hover > .faa-bounce.faa-fast {
-  animation: bounce 1s ease infinite;
+  animation: bounce ($faa-bounce-speed * $faa-speed-coeff-fast) ease infinite;
 }
 .faa-bounce.animated.faa-slow,
 .faa-bounce.animated-hover.faa-slow:hover,
 .faa-parent.animated-hover:hover > .faa-bounce.faa-slow {
-  animation: bounce 3s ease infinite;
+  animation: bounce ($faa-bounce-speed * $faa-speed-coeff-slow) ease infinite;
+}
+.faa-bounce.faa-reverse.animated,
+.faa-bounce.faa-reverse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-bounce.faa-reverse {
+  animation: bounce-reverse $faa-bounce-speed ease infinite;
+}
+.faa-bounce.faa-reverse.animated.faa-fast,
+.faa-bounce.faa-reverse.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-bounce.faa-reverse.faa-fast {
+  animation: bounce-reverse ($faa-bounce-speed * $faa-speed-coeff-fast) ease infinite;
+}
+.faa-bounce.faa-reverse.animated.faa-slow,
+.faa-bounce.faa-reverse.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-bounce.faa-reverse.faa-slow {
+  animation: bounce-reverse ($faa-bounce-speed * $faa-speed-coeff-slow) ease infinite;
 }

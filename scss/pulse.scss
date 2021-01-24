@@ -1,26 +1,24 @@
+$faa-pulse-speed: 2s;
 @keyframes pulse {
-  0% {
+  0%, 100% {
     transform: scale(1.1);
   }
   50% {
     transform: scale(0.8);
   }
-  100% {
-    transform: scale(1.1);
-  }
 }
 .faa-pulse.animated,
 .faa-pulse.animated-hover:hover,
 .faa-parent.animated-hover:hover > .faa-pulse {
-  animation: pulse 2s linear infinite;
+  animation: pulse $faa-pulse-speed linear infinite;
 }
 .faa-pulse.animated.faa-fast,
 .faa-pulse.animated-hover.faa-fast:hover,
 .faa-parent.animated-hover:hover > .faa-pulse.faa-fast {
-  animation: pulse 1s linear infinite;
+  animation: pulse ($faa-pulse-speed * $faa-speed-coeff-fast) linear infinite;
 }
 .faa-pulse.animated.faa-slow,
 .faa-pulse.animated-hover.faa-slow:hover,
 .faa-parent.animated-hover:hover > .faa-pulse.faa-slow {
-  animation: pulse 3s linear infinite;
+  animation: pulse ($faa-pulse-speed * $faa-speed-coeff-slow) linear infinite;
 }

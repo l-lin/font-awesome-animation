@@ -1,15 +1,16 @@
+$faa-shake-speed: 2.5s;
 .faa-shake.animated,
 .faa-shake.animated-hover:hover,
 .faa-parent.animated-hover:hover > .faa-shake {
-  animation: wrench 2.5s ease infinite;
+  animation: wrench $faa-shake-speed ease infinite;
 }
 .faa-shake.animated.faa-fast,
 .faa-shake.animated-hover.faa-fast:hover,
 .faa-parent.animated-hover:hover > .faa-shake.faa-fast {
-  animation: wrench 1.2s ease infinite;
+  animation: wrench ($faa-shake-speed * $faa-speed-coeff-fast) ease infinite;
 }
 .faa-shake.animated.faa-slow,
 .faa-shake.animated-hover.faa-slow:hover,
 .faa-parent.animated-hover:hover > .faa-shake.faa-slow {
-  animation: wrench 3.7s ease infinite;
+  animation: wrench ($faa-shake-speed * $faa-speed-coeff-slow) ease infinite;
 }

@@ -3,10 +3,7 @@
   0%, 10%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
-  40% {
-    transform: translateY(-15px);
-  }
-  60% {
+  40%, 60% {
     transform: translateY(-15px);
   }
 }
@@ -15,11 +12,26 @@
   0%, 10%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
-  40% {
+  40%, 60% {
     transform: translateY(-15px);
   }
-  60% {
-    transform: translateY(-15px);
+}
+
+@-webkit-keyframes bounce-reverse {
+  0%, 10%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40%, 60% {
+    transform: translateY(15px);
+  }
+}
+
+@keyframes bounce-reverse {
+  0%, 10%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40%, 60% {
+    transform: translateY(15px);
   }
 }
 
@@ -42,6 +54,27 @@
 .faa-parent.animated-hover:hover > .faa-bounce.faa-slow {
   -webkit-animation: bounce 3s ease infinite;
           animation: bounce 3s ease infinite;
+}
+
+.faa-bounce.faa-reverse.animated,
+.faa-bounce.faa-reverse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-bounce.faa-reverse {
+  -webkit-animation: bounce-reverse 2s ease infinite;
+          animation: bounce-reverse 2s ease infinite;
+}
+
+.faa-bounce.faa-reverse.animated.faa-fast,
+.faa-bounce.faa-reverse.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-bounce.faa-reverse.faa-fast {
+  -webkit-animation: bounce-reverse 1s ease infinite;
+          animation: bounce-reverse 1s ease infinite;
+}
+
+.faa-bounce.faa-reverse.animated.faa-slow,
+.faa-bounce.faa-reverse.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-bounce.faa-reverse.faa-slow {
+  -webkit-animation: bounce-reverse 3s ease infinite;
+          animation: bounce-reverse 3s ease infinite;
 }
 
 @-webkit-keyframes burst {
@@ -121,6 +154,36 @@
   }
 }
 
+@-webkit-keyframes falling-reverse {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+}
+
+@keyframes falling-reverse {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+}
+
 .faa-falling.animated,
 .faa-falling.animated-hover:hover,
 .faa-parent.animated-hover:hover > .faa-falling {
@@ -142,8 +205,38 @@
           animation: falling 3s linear infinite;
 }
 
+.faa-falling.faa-reverse.animated,
+.faa-falling.faa-reverse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-falling.faa-reverse,
+.faa-rising.animated,
+.faa-rising.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-rising {
+  -webkit-animation: falling-reverse 2s linear infinite;
+          animation: falling-reverse 2s linear infinite;
+}
+
+.faa-falling.faa-reverse.animated.faa-fast,
+.faa-falling.faa-reverse.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-falling.faa-reverse.faa-fast,
+.faa-rising.animated.faa-fast,
+.faa-rising.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-rising.faa-fast {
+  -webkit-animation: falling-reverse 1s linear infinite;
+          animation: falling-reverse 1s linear infinite;
+}
+
+.faa-falling.faa-reverse.animated.faa-slow,
+.faa-falling.faa-reverse.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-falling.faa-reverse.faa-slow,
+.faa-rising.animated.faa-slow,
+.faa-rising.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-rising.faa-slow {
+  -webkit-animation: falling-reverse 3s linear infinite;
+          animation: falling-reverse 3s linear infinite;
+}
+
 @-webkit-keyframes flash {
-  0%, 100%, 50% {
+  0%, 50%, 100% {
     opacity: 1;
   }
   25%, 75% {
@@ -152,7 +245,7 @@
 }
 
 @keyframes flash {
-  0%, 100%, 50% {
+  0%, 50%, 100% {
     opacity: 1;
   }
   25%, 75% {
@@ -182,26 +275,20 @@
 }
 
 @-webkit-keyframes float {
-  0% {
+  0%, 100% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-6px);
-  }
-  100% {
-    transform: translateY(0);
   }
 }
 
 @keyframes float {
-  0% {
+  0%, 100% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-6px);
-  }
-  100% {
-    transform: translateY(0);
   }
 }
 
@@ -227,50 +314,38 @@
 }
 
 @-webkit-keyframes horizontal {
-  0% {
+  0%, 12%, 24%, 36%, 100% {
     transform: translate(0, 0);
   }
-  6% {
+  6%, 18%, 30% {
     transform: translate(5px, 0);
-  }
-  12% {
-    transform: translate(0, 0);
-  }
-  18% {
-    transform: translate(5px, 0);
-  }
-  24% {
-    transform: translate(0, 0);
-  }
-  30% {
-    transform: translate(5px, 0);
-  }
-  36%, 100% {
-    transform: translate(0, 0);
   }
 }
 
 @keyframes horizontal {
-  0% {
+  0%, 12%, 24%, 36%, 100% {
     transform: translate(0, 0);
   }
-  6% {
+  6%, 18%, 30% {
     transform: translate(5px, 0);
   }
-  12% {
+}
+
+@-webkit-keyframes horizontal-reverse {
+  0%, 12%, 24%, 36%, 100% {
     transform: translate(0, 0);
   }
-  18% {
-    transform: translate(5px, 0);
+  6%, 18%, 30% {
+    transform: translate(-5px, 0);
   }
-  24% {
+}
+
+@keyframes horizontal-reverse {
+  0%, 12%, 24%, 36%, 100% {
     transform: translate(0, 0);
   }
-  30% {
-    transform: translate(5px, 0);
-  }
-  36%, 100% {
-    transform: translate(0, 0);
+  6%, 18%, 30% {
+    transform: translate(-5px, 0);
   }
 }
 
@@ -295,55 +370,25 @@
           animation: horizontal 3s ease infinite;
 }
 
-@-webkit-keyframes passing-reverse {
-  0% {
-    transform: translateX(50%);
-    opacity: 0;
-  }
-  50% {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(-50%);
-    opacity: 0;
-  }
+.faa-horizontal.faa-reverse.animated,
+.faa-horizontal.faa-reverse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-horizontal.faa-reverse {
+  -webkit-animation: horizontal-reverse 2s ease infinite;
+          animation: horizontal-reverse 2s ease infinite;
 }
 
-@keyframes passing-reverse {
-  0% {
-    transform: translateX(50%);
-    opacity: 0;
-  }
-  50% {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(-50%);
-    opacity: 0;
-  }
+.faa-horizontal.faa-reverse.animated.faa-fast,
+.faa-horizontal.faa-reverse.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-horizontal.faa-reverse.faa-fast {
+  -webkit-animation: horizontal-reverse 1s ease infinite;
+          animation: horizontal-reverse 1s ease infinite;
 }
 
-.faa-passing-reverse.animated,
-.faa-passing-reverse.animated-hover:hover,
-.faa-parent.animated-hover:hover > .faa-passing-reverse {
-  -webkit-animation: passing-reverse 2s linear infinite;
-          animation: passing-reverse 2s linear infinite;
-}
-
-.faa-passing-reverse.animated.faa-fast,
-.faa-passing-reverse.animated-hover.faa-fast:hover,
-.faa-parent.animated-hover:hover > .faa-passing-reverse.faa-fast {
-  -webkit-animation: passing-reverse 1s linear infinite;
-          animation: passing-reverse 1s linear infinite;
-}
-
-.faa-passing-reverse.animated.faa-slow,
-.faa-passing-reverse.animated-hover.faa-slow:hover,
-.faa-parent.animated-hover:hover > .faa-passing-reverse.faa-slow {
-  -webkit-animation: passing-reverse 3s linear infinite;
-          animation: passing-reverse 3s linear infinite;
+.faa-horizontal.faa-reverse.animated.faa-slow,
+.faa-horizontal.faa-reverse.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-horizontal.faa-reverse.faa-slow {
+  -webkit-animation: horizontal-reverse 3s ease infinite;
+          animation: horizontal-reverse 3s ease infinite;
 }
 
 @-webkit-keyframes passing {
@@ -376,6 +421,36 @@
   }
 }
 
+@-webkit-keyframes passing-reverse {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+}
+
+@keyframes passing-reverse {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+}
+
 .faa-passing.animated,
 .faa-passing.animated-hover:hover,
 .faa-parent.animated-hover:hover > .faa-passing {
@@ -397,27 +472,42 @@
           animation: passing 3s linear infinite;
 }
 
+.faa-passing.faa-reverse.animated,
+.faa-passing.faa-reverse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-passing.faa-reverse {
+  -webkit-animation: passing-reverse 2s linear infinite;
+          animation: passing-reverse 2s linear infinite;
+}
+
+.faa-passing.faa-reverse.animated.faa-fast,
+.faa-passing.faa-reverse.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-passing.reverse.faa-fast {
+  -webkit-animation: passing-reverse 1s linear infinite;
+          animation: passing-reverse 1s linear infinite;
+}
+
+.faa-passing.faa-reverse.animated.faa-slow,
+.faa-passing.faa-reverse.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-passing.faa-reverse.faa-slow {
+  -webkit-animation: passing-reverse 3s linear infinite;
+          animation: passing-reverse 3s linear infinite;
+}
+
 @-webkit-keyframes pulse {
-  0% {
+  0%, 100% {
     transform: scale(1.1);
   }
   50% {
     transform: scale(0.8);
-  }
-  100% {
-    transform: scale(1.1);
   }
 }
 
 @keyframes pulse {
-  0% {
+  0%, 100% {
     transform: scale(1.1);
   }
   50% {
     transform: scale(0.8);
-  }
-  100% {
-    transform: scale(1.1);
   }
 }
 
@@ -449,10 +539,10 @@
   2% {
     transform: rotate(15deg);
   }
-  4% {
+  4%, 12% {
     transform: rotate(-18deg);
   }
-  6% {
+  6%, 14% {
     transform: rotate(18deg);
   }
   8% {
@@ -460,12 +550,6 @@
   }
   10% {
     transform: rotate(22deg);
-  }
-  12% {
-    transform: rotate(-18deg);
-  }
-  14% {
-    transform: rotate(18deg);
   }
   16% {
     transform: rotate(-12deg);
@@ -485,10 +569,10 @@
   2% {
     transform: rotate(15deg);
   }
-  4% {
+  4%, 12% {
     transform: rotate(-18deg);
   }
-  6% {
+  6%, 14% {
     transform: rotate(18deg);
   }
   8% {
@@ -496,12 +580,6 @@
   }
   10% {
     transform: rotate(22deg);
-  }
-  12% {
-    transform: rotate(-18deg);
-  }
-  14% {
-    transform: rotate(18deg);
   }
   16% {
     transform: rotate(-12deg);
@@ -538,57 +616,6 @@
           animation: ring 3s ease infinite;
 }
 
-@-webkit-keyframes rising {
-  0% {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  50% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-50%);
-    opacity: 0;
-  }
-}
-
-@keyframes rising {
-  0% {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  50% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-50%);
-    opacity: 0;
-  }
-}
-
-.faa-rising.animated,
-.faa-rising.animated-hover:hover,
-.faa-parent.animated-hover:hover > .faa-rising {
-  -webkit-animation: rising 2s linear infinite;
-          animation: rising 2s linear infinite;
-}
-
-.faa-rising.animated.faa-fast,
-.faa-rising.animated-hover.faa-fast:hover,
-.faa-parent.animated-hover:hover > .faa-rising.faa-fast {
-  -webkit-animation: rising 1s linear infinite;
-          animation: rising 1s linear infinite;
-}
-
-.faa-rising.animated.faa-slow,
-.faa-rising.animated-hover.faa-slow:hover,
-.faa-parent.animated-hover:hover > .faa-rising.faa-slow {
-  -webkit-animation: rising 3s linear infinite;
-          animation: rising 3s linear infinite;
-}
-
 .faa-shake.animated,
 .faa-shake.animated-hover:hover,
 .faa-parent.animated-hover:hover > .faa-shake {
@@ -599,15 +626,15 @@
 .faa-shake.animated.faa-fast,
 .faa-shake.animated-hover.faa-fast:hover,
 .faa-parent.animated-hover:hover > .faa-shake.faa-fast {
-  -webkit-animation: wrench 1.2s ease infinite;
-          animation: wrench 1.2s ease infinite;
+  -webkit-animation: wrench 1.25s ease infinite;
+          animation: wrench 1.25s ease infinite;
 }
 
 .faa-shake.animated.faa-slow,
 .faa-shake.animated-hover.faa-slow:hover,
 .faa-parent.animated-hover:hover > .faa-shake.faa-slow {
-  -webkit-animation: wrench 3.7s ease infinite;
-          animation: wrench 3.7s ease infinite;
+  -webkit-animation: wrench 3.75s ease infinite;
+          animation: wrench 3.75s ease infinite;
 }
 
 @-webkit-keyframes spin {
@@ -628,6 +655,24 @@
   }
 }
 
+@-webkit-keyframes spin-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-359deg);
+  }
+}
+
+@keyframes spin-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-359deg);
+  }
+}
+
 .faa-spin.animated,
 .faa-spin.animated-hover:hover,
 .faa-parent.animated-hover:hover > .faa-spin {
@@ -638,15 +683,36 @@
 .faa-spin.animated.faa-fast,
 .faa-spin.animated-hover.faa-fast:hover,
 .faa-parent.animated-hover:hover > .faa-spin.faa-fast {
-  -webkit-animation: spin 0.7s linear infinite;
-          animation: spin 0.7s linear infinite;
+  -webkit-animation: spin 0.75s linear infinite;
+          animation: spin 0.75s linear infinite;
 }
 
 .faa-spin.animated.faa-slow,
 .faa-spin.animated-hover.faa-slow:hover,
 .faa-parent.animated-hover:hover > .faa-spin.faa-slow {
-  -webkit-animation: spin 2.2s linear infinite;
-          animation: spin 2.2s linear infinite;
+  -webkit-animation: spin 2.25s linear infinite;
+          animation: spin 2.25s linear infinite;
+}
+
+.faa-spin.faa-reverse.animated,
+.faa-spin.faa-reverse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-spin.faa-reverse {
+  -webkit-animation: spin-reverse 1.5s linear infinite;
+          animation: spin-reverse 1.5s linear infinite;
+}
+
+.faa-spin.faa-reverse.animated.faa-fast,
+.faa-spin.faa-reverse.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-spin.faa-reverse.faa-fast {
+  -webkit-animation: spin-reverse 0.75s linear infinite;
+          animation: spin-reverse 0.75s linear infinite;
+}
+
+.faa-spin.faa-reverse.animated.faa-slow,
+.faa-spin.faa-reverse.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-spin.faa-reverse.faa-slow {
+  -webkit-animation: spin-reverse 2.25s linear infinite;
+          animation: spin-reverse 2.25s linear infinite;
 }
 
 @-webkit-keyframes tada {
@@ -707,22 +773,10 @@
 }
 
 @-webkit-keyframes vertical {
-  0% {
+  0%, 8%, 16% {
     transform: translate(0, -3px);
   }
-  4% {
-    transform: translate(0, 3px);
-  }
-  8% {
-    transform: translate(0, -3px);
-  }
-  12% {
-    transform: translate(0, 3px);
-  }
-  16% {
-    transform: translate(0, -3px);
-  }
-  20% {
+  4%, 12%, 20% {
     transform: translate(0, 3px);
   }
   22%, 100% {
@@ -731,22 +785,10 @@
 }
 
 @keyframes vertical {
-  0% {
+  0%, 8%, 16% {
     transform: translate(0, -3px);
   }
-  4% {
-    transform: translate(0, 3px);
-  }
-  8% {
-    transform: translate(0, -3px);
-  }
-  12% {
-    transform: translate(0, 3px);
-  }
-  16% {
-    transform: translate(0, -3px);
-  }
-  20% {
+  4%, 12%, 20% {
     transform: translate(0, 3px);
   }
   22%, 100% {
@@ -771,8 +813,8 @@
 .faa-vertical.animated.faa-slow,
 .faa-vertical.animated-hover.faa-slow:hover,
 .faa-parent.animated-hover:hover > .faa-vertical.faa-slow {
-  -webkit-animation: vertical 4s ease infinite;
-          animation: vertical 4s ease infinite;
+  -webkit-animation: vertical 3s ease infinite;
+          animation: vertical 3s ease infinite;
 }
 
 @-webkit-keyframes wrench {
@@ -782,41 +824,11 @@
   8% {
     transform: rotate(12deg);
   }
-  10% {
+  10%, 28%, 30%, 48%, 50%, 68% {
     transform: rotate(24deg);
   }
-  18% {
+  18%, 20%, 38%, 40%, 58%, 60% {
     transform: rotate(-24deg);
-  }
-  20% {
-    transform: rotate(-24deg);
-  }
-  28% {
-    transform: rotate(24deg);
-  }
-  30% {
-    transform: rotate(24deg);
-  }
-  38% {
-    transform: rotate(-24deg);
-  }
-  40% {
-    transform: rotate(-24deg);
-  }
-  48% {
-    transform: rotate(24deg);
-  }
-  50% {
-    transform: rotate(24deg);
-  }
-  58% {
-    transform: rotate(-24deg);
-  }
-  60% {
-    transform: rotate(-24deg);
-  }
-  68% {
-    transform: rotate(24deg);
   }
   75%, 100% {
     transform: rotate(0deg);
@@ -830,41 +842,11 @@
   8% {
     transform: rotate(12deg);
   }
-  10% {
+  10%, 28%, 30%, 48%, 50%, 68% {
     transform: rotate(24deg);
   }
-  18% {
+  18%, 20%, 38%, 40%, 58%, 60% {
     transform: rotate(-24deg);
-  }
-  20% {
-    transform: rotate(-24deg);
-  }
-  28% {
-    transform: rotate(24deg);
-  }
-  30% {
-    transform: rotate(24deg);
-  }
-  38% {
-    transform: rotate(-24deg);
-  }
-  40% {
-    transform: rotate(-24deg);
-  }
-  48% {
-    transform: rotate(24deg);
-  }
-  50% {
-    transform: rotate(24deg);
-  }
-  58% {
-    transform: rotate(-24deg);
-  }
-  60% {
-    transform: rotate(-24deg);
-  }
-  68% {
-    transform: rotate(24deg);
   }
   75%, 100% {
     transform: rotate(0deg);
@@ -884,14 +866,14 @@
 .faa-wrench.animated.faa-fast,
 .faa-wrench.animated-hover.faa-fast:hover,
 .faa-parent.animated-hover:hover > .faa-wrench.faa-fast {
-  -webkit-animation: wrench 1.2s ease infinite;
-          animation: wrench 1.2s ease infinite;
+  -webkit-animation: wrench 1.25s ease infinite;
+          animation: wrench 1.25s ease infinite;
 }
 
 .faa-wrench.animated.faa-slow,
 .faa-wrench.animated-hover.faa-slow:hover,
 .faa-parent.animated-hover:hover > .faa-wrench.faa-slow {
-  -webkit-animation: wrench 3.7s ease infinite;
-          animation: wrench 3.7s ease infinite;
+  -webkit-animation: wrench 3.75s ease infinite;
+          animation: wrench 3.75s ease infinite;
 }
 /*# sourceMappingURL=font-awesome-animation.css.map */

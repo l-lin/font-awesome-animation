@@ -1,23 +1,47 @@
-@keyframes spin{
+$faa-spin-speed: 1.5s;
+@keyframes spin {
   0% {
-    transform:rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform:rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-359deg);
   }
 }
 .faa-spin.animated,
 .faa-spin.animated-hover:hover,
 .faa-parent.animated-hover:hover > .faa-spin {
-  animation: spin 1.5s linear infinite;
+  animation: spin $faa-spin-speed linear infinite;
 }
 .faa-spin.animated.faa-fast,
 .faa-spin.animated-hover.faa-fast:hover,
 .faa-parent.animated-hover:hover > .faa-spin.faa-fast {
-  animation: spin 0.7s linear infinite;
+  animation: spin ($faa-spin-speed * $faa-speed-coeff-fast) linear infinite;
 }
 .faa-spin.animated.faa-slow,
 .faa-spin.animated-hover.faa-slow:hover,
 .faa-parent.animated-hover:hover > .faa-spin.faa-slow {
-  animation: spin 2.2s linear infinite;
+  animation: spin ($faa-spin-speed * $faa-speed-coeff-slow) linear infinite;
+}
+.faa-spin.faa-reverse.animated,
+.faa-spin.faa-reverse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-spin.faa-reverse {
+  animation: spin-reverse $faa-spin-speed linear infinite;
+}
+.faa-spin.faa-reverse.animated.faa-fast,
+.faa-spin.faa-reverse.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover > .faa-spin.faa-reverse.faa-fast {
+  animation: spin-reverse ($faa-spin-speed * $faa-speed-coeff-fast) linear infinite;
+}
+.faa-spin.faa-reverse.animated.faa-slow,
+.faa-spin.faa-reverse.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover > .faa-spin.faa-reverse.faa-slow {
+  animation: spin-reverse ($faa-spin-speed * $faa-speed-coeff-slow) linear infinite;
 }
