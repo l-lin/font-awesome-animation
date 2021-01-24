@@ -75,6 +75,9 @@ You can regulate the speed of the animation by adding the CSS class `faa-fast` o
 
 ## Animation list
 
+Check the [Github page](https://l-lin.github.io/font-awesome-animation/#animation-list) to view the
+previews.
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome-animation/css/font-awesome-animation.min.css">
 <!--link rel="stylesheet" href="http://localhost:8080/css/font-awesome-animation.css"-->
