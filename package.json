@@ -4,7 +4,7 @@
   "dependencies": {},
   "author": "l-lin",
   "license": "MIT",
-  "main": "$npm_package_name.scss",
+  "main": "font-awesome-animation.scss",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/l-lin/font-awesome-animation.git"
