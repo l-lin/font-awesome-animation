@@ -17,7 +17,7 @@
     "autoprefixer": "~10.2.3",
     "clean-css-cli": "~4.3.0",
     "concat": "~1.0.3",
-    "handlebars": "~4.7.6",
+    "handlebars": "~4.7.7",
     "node-sass": "~5.0.0",
     "postcss": "^8.1.0",
     "postcss-cli": "~8.3.1",
